@@ -22,7 +22,7 @@
         {%- when '@app' -%}
           {% render block %}
         {%- when 'heading' -%}
-          <h2
+          {% comment %} <h2
             class="inline-richtext {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {{ block.shopify_attributes }}
             {% if settings.animations_reveal_on_scroll %}
@@ -31,8 +31,8 @@
             {% endif %}
           >
             {{ block.settings.heading }}
-          </h2>
-        {%- when 'paragraph' -%}
+          </h2> {% endcomment %}
+        {% comment %} {%- when 'paragraph' -%}
           <div
             class="newsletter__subheading rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {{ block.shopify_attributes }}
@@ -42,7 +42,7 @@
             {% endif %}
           >
             {{ block.settings.text }}
-          </div>
+          </div> {% endcomment %}
         {%- when 'email_form' -%}
           <div {{ block.shopify_attributes }}>
             {% form 'customer', class: 'newsletter-form' %}
