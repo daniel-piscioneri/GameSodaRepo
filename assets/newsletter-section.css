@@ -8,7 +8,11 @@
   font-size: 13px;
   line-height: 1.5em;
   text-align: center;
-  color: var(--token-19dd336a-8e79-47a7-b3c4-8d10); /* Replace this with an actual color if undefined */
+  color: black;
+}
+
+.bolder{
+  font-weight: bold;
 }
 
 @media screen and (min-width: 750px) {
