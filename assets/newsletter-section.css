@@ -8,11 +8,11 @@
   font-size: 13px;
   line-height: 1.5em;
   text-align: center;
-  color: black;
+
 }
 
 .bolder{
-  font-weight: 1000;
+  color: black;
 }
 
 @media screen and (min-width: 750px) {
