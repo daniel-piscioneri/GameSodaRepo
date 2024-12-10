@@ -19,6 +19,10 @@
   float: left;
 }
 
+.social__icons{
+  gap: 20px;
+}
+
 @media screen and (min-width: 750px) {
   .newsletter__wrapper {
     padding-right: 9rem;
