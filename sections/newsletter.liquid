@@ -16,37 +16,13 @@
 {%- endstyle -%}
 
 <div class="newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
+  <div class="framer-1hq7xrb" data-framer-name="line" name="line"></div>
   <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when '@app' -%}
           {% render block %}
         {%- when 'heading' -%}
-          {% comment %}
-            <h2
-              class="inline-richtext {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-              {{ block.shopify_attributes }}
-              {% if settings.animations_reveal_on_scroll %}
-                data-cascade
-                style="--animation-order: {{ forloop.index }};"
-              {% endif %}
-            >
-              {{ block.settings.heading }}
-            </h2>
-          {% endcomment %}
-          {% comment %}
-            {%- when 'paragraph' -%}
-            <div
-              class="newsletter__subheading rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-              {{ block.shopify_attributes }}
-              {% if settings.animations_reveal_on_scroll %}
-                data-cascade
-                style="--animation-order: {{ forloop.index }};"
-              {% endif %}
-            >
-              {{ block.settings.text }}
-            </div>
-          {% endcomment %}
           <div class="subscribe__social_link-footer">
         {%- when 'email_form' -%}
           <div {{ block.shopify_attributes }} class="newsletter__input__block">
@@ -120,6 +96,23 @@
               {%- endif -%}
             {% endform %}
           </div>
+          <div class="footer-separator">
+            <svg
+              class="separator-line"
+              xmlns="http://www.w3.org/2000/svg"
+              width="90%"
+              height="1"
+              viewBox="0 0 100 2"
+              preserveAspectRatio="none"
+            >
+              <rect
+                width="100%"
+                height="100%"
+                fill="{{ settings.separator_color | default: '#000000' }}"
+              ></rect>
+            </svg>
+          </div>
+          
           <div class="logo__social-container">
           <div class="logo-container" name="logo">
             <!-- Icon Section -->
