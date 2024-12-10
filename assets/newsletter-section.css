@@ -15,11 +15,6 @@
   color: black;
 }
 
-.bx.bxl-instagram{
-  height: 32px !important;
-  width: 32px !important; 
-}
-
 @media screen and (min-width: 750px) {
   .newsletter__wrapper {
     padding-right: 9rem;
