@@ -49,7 +49,7 @@
           {% endcomment %}
           <div class="subscribe__social_link-footer">
         {%- when 'email_form' -%}
-          <div {{ block.shopify_attributes }}>
+          <div {{ block.shopify_attributes }} class="newsletter__input__block">
             {% form 'customer', class: 'newsletter-form' %}
               <input type="hidden" name="contact[tags]" value="newsletter">
               <div
@@ -120,16 +120,6 @@
               {%- endif -%}
             {% endform %}
           </div>
-          <a href="mailto:danielp2811@gmail.com"
-            ><img
-              decoding="async"
-              loading="lazy"
-              src="https://framerusercontent.com/images/qba1MgdnU6Ge9fx7mme42MWgYJ0.png"
-              alt=""
-              width="32"
-              height="32"
-              style="display:block;float:right;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"
-          ></a>
           <a
             class="framer-1d1ok0 framer-1rqkjs5"
             data-framer-name="instagram"
@@ -155,6 +145,17 @@
               </div>
             </div>
           </a>
+          <a href="mailto:danielp2811@gmail.com"
+            ><img
+              decoding="async"
+              loading="lazy"
+              src="https://framerusercontent.com/images/qba1MgdnU6Ge9fx7mme42MWgYJ0.png"
+              alt=""
+              width="32"
+              height="32"
+              style="display:block;float:right;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto;padding-left:20px;"
+          ></a>
+          
           </div>
       {%- endcase -%}
     {%- endfor -%}
