@@ -96,6 +96,7 @@
       >
         {% assign skip_card_product_styles = false %}
         {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
+          <div class="row__container" style="display:flex; flex-direction:row;">
           <div class="row__1">
             {%- if forloop.index == 1 or forloop.index == 2 -%}
               <h1>{{ forloop.index }}</h1>
@@ -106,6 +107,7 @@
                 <h2>{{ forloop.index }}</h2>
               </div>
               {% endif %}
+              </div>
           <li
             id="Slide-{{ section.id }}-{{ forloop.index }}"
             class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
