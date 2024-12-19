@@ -98,7 +98,7 @@
         <div class="row__container" style="display:flex; flex-direction:row;">
           {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
             <div class="row__1">
-              {%- if forloop.index == 1-%}
+              {%- if product.id == 1 -%}
                 {% comment %} <h1>{{ forloop.index }}</h1> {% endcomment %}
                 <li
                   id="Slide-{{ section.id }}-{{ forloop.index }}"
