@@ -96,8 +96,8 @@
       >
         {% assign skip_card_product_styles = false %}
         <div class="row__container" style="display:flex; flex-direction:row;">
-          {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
             <div class="row__1">
+              {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
               {%- if product.id == 1 -%}
                 {% comment %} <h1>{{ forloop.index }}</h1> {% endcomment %}
                 <li
@@ -149,9 +149,12 @@
                   </li>
                 {%- endfor -%}
               {% endif %}
+              {% endfor %}
             </div>
             <div class="row__2">
+              {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
               {% if forloop.index == 3 or forloop.index == 4 %}
+
                 {% comment %} <h2>{{ forloop.index }}</h2> {% endcomment %}
                 <li
                   id="Slide-{{ section.id }}-{{ forloop.index }}"
@@ -202,8 +205,8 @@
                   </li>
                 {%- endfor -%}
               {% endif %}
+              {% endfor %}
             </div>
-          {%- endfor -%}
         </div>
       </ul>
       {%- if show_mobile_slider or show_desktop_slider -%}
