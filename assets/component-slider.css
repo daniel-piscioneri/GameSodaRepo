@@ -229,6 +229,10 @@ slider-component.slider-component-full-width {
   /* justify-content: center; */
 }
 
+.center__grid {
+  justify-content: center;
+}
+
 .slider::-webkit-scrollbar {
   height: 0.4rem;
   width: 0.4rem;
