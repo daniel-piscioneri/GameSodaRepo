@@ -9,6 +9,7 @@ slider-component {
   );
   position: relative;
   display: flex;
+  justify-content:center;
 }
 
 slider-component.slider-component-full-width {
