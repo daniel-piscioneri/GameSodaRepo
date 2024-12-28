@@ -18,8 +18,8 @@
 @media screen and (min-width: 750px) {
   .collage {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr; /* Larger column for the first image, smaller columns for the rest */
-    grid-template-rows: repeat(2, auto); /* Two rows for right-side smaller images */
+    grid-template-columns: 3fr 2fr; 
+    grid-template-rows: auto auto; 
     grid-gap: var(--grid-desktop-horizontal-spacing);
   }
 
@@ -36,11 +36,11 @@
   }
 
   .collage__item:nth-child(3) {
-    grid-column: 3 / 4;
-    grid-row: 1;
+    grid-column: 2 / 3;
+    grid-row: 2;
   }
 
-  .collage__item:nth-child(4) {
+  /* .collage__item:nth-child(4) {
     grid-column: 2 / 3;
     grid-row: 2;
   }
@@ -48,7 +48,7 @@
   .collage__item:nth-child(5) {
     grid-column: 3 / 4;
     grid-row: 2;
-  }
+  } */
 }
 
 @media screen and (max-width: 749px) {
