@@ -576,12 +576,19 @@ details > * {
   }
 }
 
+/* Pagination container styles */
+.pagination__list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
 .pagination__item {
-  display: inline-block;
   margin: 0 5px;
 }
 
-.pagination .dot {
+.pagination__dot {
   width: 8px;
   height: 8px;
   background-color: #ccc;
@@ -590,17 +597,23 @@ details > * {
   transition: background-color 0.3s ease;
 }
 
-.pagination .dot.active {
-  background-color: #000; /* Active dot color */
+/* Active dot for current page */
+.pagination__dot.active {
+  background-color: #000;
 }
 
-.pagination .dot-link {
+/* Dot link styling */
+.pagination__dot-link {
+  display: inline-block;
   padding: 0;
+  cursor: pointer;
 }
 
-.pagination .current .dot {
-  background-color: #000; /* Current page dot color */
+/* Hover effect on dots */
+.pagination__dot-link:hover .pagination__dot {
+  background-color: #000;
 }
+
 
 
 :root {
