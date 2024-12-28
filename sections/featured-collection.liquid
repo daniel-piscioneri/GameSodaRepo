@@ -149,7 +149,7 @@
 
       </ul>
       {%- if show_mobile_slider or show_desktop_slider -%}
-        <!-- <div class="slider-buttons">
+        <div class="slider-buttons">
           <button
             type="button"
             class="slider-button slider-button--prev"
@@ -178,8 +178,8 @@
               {{- 'icon-caret.svg' | inline_asset_content -}}
             </span>
           </button>
-        </div> -->
-    <div class="slideshow__controls slider-buttons{% if section.settings.show_text_below %} slideshow__controls--border-radius-mobile{% endif %}">
+        </div>
+    <!-- <div class="slideshow__controls slider-buttons{% if section.settings.show_text_below %} slideshow__controls--border-radius-mobile{% endif %}">
       <button
         type="button"
         class="slider-button slider-button--prev"
@@ -241,7 +241,7 @@
           </span>
         </button>
       {%- endif -%}
-    </div>
+    </div> -->
       {%- endif -%}
     </slider-component>
 
