@@ -1,5 +1,13 @@
+.multicol__card__height:nth-child(1){
+  height: 90px
+}
+
 .multicol__card__height:nth-child(2){
   height: 300px
+}
+
+.multicol__card__height:nth-child(3){
+  height: 30px
 }
 
 .multicol__width{
