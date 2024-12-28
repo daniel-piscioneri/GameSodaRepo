@@ -16,7 +16,7 @@
     "body_scale": 100,
     "page_width": 1600,
     "spacing_sections": 36,
-    "spacing_grid_horizontal": 40,
+    "spacing_grid_horizontal": 16,
     "spacing_grid_vertical": 40,
     "animations_reveal_on_scroll": true,
     "animations_hover_elements": "none",
