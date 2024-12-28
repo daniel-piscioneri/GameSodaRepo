@@ -138,20 +138,20 @@
         "product_YrmTe4": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "product_template",
             "second_image": false
           }
         },
         "collection_p3CAaB": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "frontpage"
           }
         },
         "product_WME9z4": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "product_template_10",
             "second_image": false
           }
         }
