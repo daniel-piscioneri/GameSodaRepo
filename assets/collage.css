@@ -40,15 +40,10 @@
     grid-row: 2;
   }
 
-  /* .collage__item:nth-child(4) {
+  .collage__item:nth-child(4) {
     grid-column: 2 / 3;
-    grid-row: 2;
+    grid-row: 3;
   }
-
-  .collage__item:nth-child(5) {
-    grid-column: 3 / 4;
-    grid-row: 2;
-  } */
 }
 
 @media screen and (max-width: 749px) {
