@@ -1,8 +1,6 @@
 .banner {
   display: flex;
-  position: absolute;
-  left: -3rem;
-  bottom: 0;
+  position: relative;
   flex-direction: column;
   z-index: auto;
   isolation: isolate;
@@ -10,10 +8,6 @@
 
 .banner__box {
   text-align: center;
-  /* position: fixed;
-  left: 0;
-  bottom: 0; */
-  border-radius: 0 2rem 0 0;
 }
 
 /* Needed for gradient continuity with or without animation, the transform scopes the gradient to its container which happens already when animation are turned on */
