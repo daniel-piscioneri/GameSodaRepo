@@ -304,6 +304,8 @@
   margin-top: 0;
   margin-bottom: 0;
   float: left;
+  font-weight: bold;
+  font-size: large;
 }
 
 .card__heading:last-child {
