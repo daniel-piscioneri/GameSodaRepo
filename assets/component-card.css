@@ -117,6 +117,10 @@
   width: 100%;
 }
 
+.blog_img_height{
+  height: 30rem;
+}
+
 .card--media .card__inner .card__content {
   position: relative;
   padding: calc(var(--image-padding) + 1rem);

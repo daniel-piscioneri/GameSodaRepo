@@ -101,7 +101,7 @@
                   style=" {% if settings.blog_card_style == 'standard' %} --ratio-percent: 100%;{% elsif settings.blog_card_style == 'card' %} --ratio-percent: 0%;{% endif %}"
                 >
                   <div
-                    class="card__inner{% if settings.blog_card_style == 'standard' %} color-{{ settings.blog_card_color_scheme }} gradient{% endif %} ratio"
+                    class="card__inner{% if settings.blog_card_style == 'standard' %} color-{{ settings.blog_card_color_scheme }} gradient{% endif %} ratio blog_img_height"
                     style="--ratio-percent: 80%;"
                   >
                     {%- if section.settings.show_image == true -%}
