@@ -1,6 +1,8 @@
 .banner {
   display: flex;
-  position: relative;
+  position: fixed;
+  left: -3rem;
+  bottom: 0ß;
   flex-direction: column;
   z-index: auto;
   isolation: isolate;
@@ -8,9 +10,9 @@
 
 .banner__box {
   text-align: center;
-  position: fixed;
+  /* position: fixed;
   left: 0;
-  bottom: 0;
+  bottom: 0; */
   border-radius: 0 2rem 0 0;
 }
 
