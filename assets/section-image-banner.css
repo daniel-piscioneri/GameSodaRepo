@@ -7,6 +7,9 @@
 }
 
 .banner__box {
+  position: absolute !important;
+  left: 0;
+  bottom: 0;
   text-align: center;
   border-radius: 0 2rem 0 0;
 }
@@ -269,6 +272,7 @@
 
 .banner__content {
   padding: 0;
+  margin: 0;
   display: flex;
   position: relative;
   width: 100%;
