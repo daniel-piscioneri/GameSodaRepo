@@ -2,7 +2,7 @@
   display: flex;
   position: fixed;
   left: -3rem;
-  bottom: 0ß;
+  bottom: 0;
   flex-direction: column;
   z-index: auto;
   isolation: isolate;
