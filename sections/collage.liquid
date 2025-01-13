@@ -41,9 +41,9 @@
             {%- when 'image' -%}
               <div class="collage-card {% if section.settings.card_styles == 'none' %}global-media-settings{% else %}card-wrapper {{ section.settings.card_styles }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
                 <div class="{%- if forloop.index == 2 or forloop.index == 3-%}image__block__smaller{% endif %} image__text {% if forloop.index == 1 %}green
-                    {% endif %}{% if forloop.index == 1 %}yellow
-                    {% endif %}{% if forloop.index == 1 %}blue
-                    {% endif %}{% if forloop.index == 1 %}red
+                    {% endif %}{% if forloop.index == 2 %}yellow
+                    {% endif %}{% if forloop.index == 3 %}blue
+                    {% endif %}{% if forloop.index == 4 %}red
                     {% endif %}">
                   <h2 class="collage__header" style="width: 70%; margin:0;">
                     {% if forloop.index == 1 %}
