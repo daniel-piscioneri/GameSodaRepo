@@ -164,7 +164,7 @@
 }
 
 .image__block__smaller{
-  height: 20rem;
+  height: 40%;
 }
 
 @media (max-width: 768px){

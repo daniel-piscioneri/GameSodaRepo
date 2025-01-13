@@ -41,16 +41,14 @@
           {%- case block.type -%}
             {%- when 'image' -%}
               <div class="collage-card {% if section.settings.card_styles == 'none' %}global-media-settings{% else %}card-wrapper {{ section.settings.card_styles }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
-                {% if block.type == "image" %}
                   <div class="{%- if forloop.index == 2 or forloop.index == 3-%}image__block__smaller{% endif %} image__text"><h1 style="width: 70%;">hi</h1>
                   <div class=""><button style="height: 100%; float:right; width:100%; background-color:transparent;border: solid 1px yellow; border-radius:2rem; margin-bottom:1rem;">Shop Now</button></div></div>
-                {% endif %}
               <div
                   class="media media--transparent ratio"
                   {% if block.settings.image != blank %}
                     style="--ratio-percent: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%"
                   {% else %}
-                    style="--ratio-percent: 100%"
+                    style="{% unless forloop.index==2 or forloop.index==3 %}height:80%;{% endunless %}--ratio-percent: 100%"
                   {% endif %}
                 >
                   {%- if block.settings.image != blank -%}
