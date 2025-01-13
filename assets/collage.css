@@ -164,12 +164,12 @@
 }
 
 .image__block__smaller{
-  background-color: black;
+  height: 20rem;
 }
 
 @media (max-width: 768px){
   .image__block__smaller{
-    display: none;
+    height: auto;
   }
 }
 
