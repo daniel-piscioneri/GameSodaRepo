@@ -167,6 +167,7 @@
 
 .image__block__smaller{
   height: 40%;
+  flex-direction: column;
 }
 
 .btn__left{
@@ -175,6 +176,10 @@
 
 .btn{
   float: right;
+}
+
+.btn__right{
+
 }
 
 @media (max-width: 768px){
