@@ -67,9 +67,10 @@
 }
 
 .collage__header {
-  font-size-adjust: calc(var(--font-heading-scale)*0.9);
+  font-size-adjust: calc(var(--font-heading-scale)*0.8);
   line-height: initial;
   height: inherit;
+  font-weight: 1000;
 }
 
 .img__hover:hover .img__zoom{
@@ -79,12 +80,28 @@
 .image__text{
   z-index: 10;
   width: 100%;
-  background-color: green;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   height: 20%;
   padding: 1.2rem;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.green{
+  background-color: green;
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+.blue{
+  background-color: blue;
+}
+
+.red{
+  background-color: rgb(247, 57, 57);
 }
 
 .image__block__smaller{
@@ -95,9 +112,20 @@
 .btn__left{
   float: left;
   position: relative;
-  top: 500%;
+  top: 90%;
   font-size-adjust: calc(var(--font-body-scale)*0.7);
   color: green;
+}
+
+@media (max-width: 1300px) {
+  .collage__header{
+    font-size-adjust: calc((var(--font-heading-scale)*0.6));
+  }
+}
+@media (max-width:1032px) {
+  .collage__header{
+    font-size-adjust: calc((var(--font-heading-scale)*0.38));
+  }
 }
 
 .btn{

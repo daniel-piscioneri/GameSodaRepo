@@ -40,7 +40,11 @@
           {%- case block.type -%}
             {%- when 'image' -%}
               <div class="collage-card {% if section.settings.card_styles == 'none' %}global-media-settings{% else %}card-wrapper {{ section.settings.card_styles }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
-                <div class="{%- if forloop.index == 2 or forloop.index == 3-%}image__block__smaller{% endif %} image__text">
+                <div class="{%- if forloop.index == 2 or forloop.index == 3-%}image__block__smaller{% endif %} image__text {% if forloop.index == 1 %}green
+                    {% endif %}{% if forloop.index == 1 %}yellow
+                    {% endif %}{% if forloop.index == 1 %}blue
+                    {% endif %}{% if forloop.index == 1 %}red
+                    {% endif %}">
                   <h2 class="collage__header" style="width: 70%; margin:0;">
                     {% if forloop.index == 1 %}
                       MBTI x Perfume
@@ -55,7 +59,7 @@
                       Aussie Studying Style
                     {% endif %}
                   </h2>
-                  <div style="position: relative; padding:0 20px 0 20px; width:100%; height:1rem">
+                  <div style="position: relative; padding:0 20px 0 20px; width:100%; height:inherit">
                     <button
                       class="btn{%if forloop.index == 2 or forloop.index==3 %}__left {% endif %}"
                       style="background-color:transparent;border: solid 1px yellow; border-radius:2rem; margin-bottom:1rem;"
