@@ -93,10 +93,12 @@
 }
 .btn-green,.btn-yellow,.btn-red{
   border-color: black !important;
+  color: black !important;
 }
 
 .btn-blue{
   border-color: white !important;
+  color: white !important;
 }
 
 .yellow{
