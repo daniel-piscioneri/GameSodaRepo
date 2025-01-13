@@ -42,7 +42,7 @@
             {%- when 'image' -%}
               <div class="collage-card {% if section.settings.card_styles == 'none' %}global-media-settings{% else %}card-wrapper {{ section.settings.card_styles }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
                   <div class="{%- if forloop.index == 2 or forloop.index == 3-%}image__block__smaller{% endif %} image__text">
-                    <h1 style="width: 70%; margin:0;">
+                    <h3 style="width: 70%; margin:0;">
                     {% if forloop.index == 1 %}
                       MBTI x Perfume
                     {% endif %}
@@ -55,8 +55,8 @@
                     {% if forloop.index == 4 %}
                       Aussie Studying Style
                     {% endif %}
-                    </h1>
-                  <div class=""><button style="height: 100%; float:right; width:100%; background-color:transparent;border: solid 1px yellow; border-radius:2rem; margin-bottom:1rem;">Shop Now</button></div></div>
+                    </h3>
+                  <div class=""><button style="height: 100%; float:right; background-color:transparent;border: solid 1px yellow; border-radius:2rem; margin-bottom:1rem;">Shop Now</button></div></div>
               <div
                   class="media media--transparent ratio"
                   {% if block.settings.image != blank %}
