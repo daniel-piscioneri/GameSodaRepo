@@ -91,6 +91,14 @@
 .green{
   background-color: green;
 }
+.btn-green,.btn-yellow,.btn-red{
+  border-color: black;
+}
+
+.btn-blue{
+  border-color: white;
+  color: white;
+}
 
 .yellow{
   background-color: yellow;
