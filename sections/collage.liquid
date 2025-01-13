@@ -42,7 +42,8 @@
             {%- when 'image' -%}
               <div class="collage-card {% if section.settings.card_styles == 'none' %}global-media-settings{% else %}card-wrapper {{ section.settings.card_styles }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
                 {% if block.type == "image" %}
-                  <div style="display:absolute; bottom:0; left:0"><h1>hi</h1></div>
+                  <div class="image__text"><h1 style="width: 70%;">hi</h1>
+                  <div class="{%- if forloop.index == 2 or forloop.index == 4-%}{% endif %}"><button style="height: 100%; float:right; width:30%; background-color:transparent;border: solid 1px yellow; border-radius:2rem; margin-bottom:1rem;">Shop Now</button></div></div>
                 {% endif %}
               <div
                   class="media media--transparent ratio"

@@ -149,6 +149,20 @@
   }
 } */
 
+.image__text{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: green;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: end;
+  flex-direction: row;
+}
+
 .collage-card {
   height: 100%;
   position: relative;
