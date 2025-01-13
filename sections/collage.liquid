@@ -36,6 +36,9 @@
             style="--animation-order: {{ forloop.index }};"
           {% endif %}
         >
+          {% if block.type == "image" %}
+            <h1>hi</h1>
+          {% endif %}
           {%- assign placeholder_image_index = forloop.index0 | modulo: 4 | plus: 1 -%}
           {%- case block.type -%}
             {%- when 'image' -%}
