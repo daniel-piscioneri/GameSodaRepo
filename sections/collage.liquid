@@ -41,7 +41,7 @@
             {%- when 'image' -%}
               <div class="collage-card {% if section.settings.card_styles == 'none' %}global-media-settings{% else %}card-wrapper {{ section.settings.card_styles }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
                 <div class="{%- if forloop.index == 2 or forloop.index == 3-%}image__block__smaller{% endif %} image__text">
-                  <h3 style="width: 70%; margin:0;">
+                  <h2 style="width: 70%; margin:0;">
                     {% if forloop.index == 1 %}
                       MBTI x Perfume
                     {% endif %}
@@ -54,7 +54,7 @@
                     {% if forloop.index == 4 %}
                       Aussie Studying Style
                     {% endif %}
-                  </h3>
+                  </h2>
                   <div style="position: relative; padding:20px; width:100%">
                     <button
                       class="btn{%if forloop.index == 2 or forloop.index==3 %}__left {% endif %}"
@@ -65,7 +65,7 @@
                   </div>
                 </div>
                 <div
-                  class="media media--transparent ratio"
+                  class="media media--transparent ratio img__hover"
                   {% if block.settings.image != blank %}
                     style="--ratio-percent: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%"
                   {% else %}

@@ -54,6 +54,14 @@
   }
 }
 
+.img__hover{
+  transition: transform 0.3s ease-in-out;
+}
+
+.img__hover:hover{
+  transform: scale(1.2);
+}
+
 /* @media screen and (max-width: 749px) {
   .collage {
     grid-column-gap: var(--grid-mobile-horizontal-spacing);
