@@ -163,6 +163,10 @@
   flex-direction: row;
 }
 
+.image__block_smaller{
+  background-color: black;
+}
+
 .collage-card {
   height: 100%;
   position: relative;
