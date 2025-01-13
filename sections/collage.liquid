@@ -42,7 +42,7 @@
             {%- when 'image' -%}
               <div class="collage-card {% if section.settings.card_styles == 'none' %}global-media-settings{% else %}card-wrapper {{ section.settings.card_styles }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
                 {% if block.type == "image" %}
-                  <h1 style="display:absolute; bottom:0; left:0">hi</h1>
+                  <div style="display:absolute; bottom:0; left:0"><h1>hi</h1></div>
                 {% endif %}
               <div
                   class="media media--transparent ratio"
