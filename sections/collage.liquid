@@ -49,6 +49,22 @@
                     {% endif %}
                   "
                 >
+                  <div class="item__tag" style="font-size: 12px; border: solid black; border-radius:2rem; background-color:black">
+                    <p style="color: white;">
+                      {% if forloop.index == 1 %}
+                        1
+                      {% endif %}
+                      {% if forloop.index == 2 %}
+                        2
+                      {% endif %}
+                      {% if forloop.index == 3 %}
+                        3
+                      {% endif %}
+                      {% if forloop.index == 4 %}
+                        4
+                      {% endif %}
+                    </p>
+                  </div>
                   <h2 class="collage__header {% if forloop.index == 3 %}blue
                     {% endif %}" style="width: 70%; margin:0; color:black;">
                     {% if forloop.index == 1 %}
