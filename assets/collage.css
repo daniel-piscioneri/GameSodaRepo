@@ -150,9 +150,9 @@
 } */
 
 .image__text{
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
-  left: 0;
+  left: 0; */
   z-index: 10;
   width: 100%;
   background-color: green;
@@ -161,6 +161,7 @@
   justify-content: center;
   align-items: end;
   flex-direction: row;
+  height: 20%;
 }
 
 .image__block__smaller{
@@ -175,6 +176,8 @@
 
 .collage-card {
   height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
   position: relative;
   border-radius: var(--border-radius);
   border: var(--border-width) solid rgba(var(--color-foreground), var(--border-opacity));
@@ -212,7 +215,7 @@
 }
 
 .collage-card .media {
-  height: 100%;
+  height: 80%;
   overflow: hidden;
   border-radius: calc(var(--border-radius) - var(--border-width) - var(--image-padding));
 }
