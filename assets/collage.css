@@ -150,16 +150,12 @@
 } */
 
 .image__text{
-  /* position: absolute;
-  bottom: 0;
-  left: 0; */
   z-index: 10;
   width: 100%;
   background-color: green;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* align-items: end; */
   flex-direction: row;
   height: 20%;
   padding: 1.2rem;
@@ -176,10 +172,9 @@
 
 .btn{
   float: right;
-}
-
-.btn__right{
-
+  position: relative;
+  top: 80%;
+  font-size-adjust: calc(var(--font-body-scale)*0.7);
 }
 
 @media (max-width: 768px){
