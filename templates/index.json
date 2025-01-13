@@ -9,6 +9,48 @@
  */
 {
   "sections": {
+    "rich_text_3nAVKh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_xbPykn": {
+          "type": "heading",
+          "settings": {
+            "heading": "Interactive Psychopoly Game",
+            "heading_size": "h1"
+          }
+        },
+        "text_nmUYbq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Let's use interactive games to increase brand awareness and generate leads, together</p>"
+          }
+        },
+        "button_LHLebr": {
+          "type": "button",
+          "settings": {
+            "button_label": "Find Out More",
+            "button_link": "shopify://pages/contact",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_xbPykn",
+        "text_nmUYbq",
+        "button_LHLebr"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "collage_BMehgx": {
       "type": "collage",
       "blocks": {
@@ -16,32 +58,24 @@
           "type": "image",
           "settings": {}
         },
-        "product_YrmTe4": {
-          "type": "product",
-          "settings": {
-            "product": "product_template",
-            "second_image": false
-          }
+        "image_brnKdG": {
+          "type": "image",
+          "settings": {}
         },
-        "collection_p3CAaB": {
-          "type": "collection",
-          "settings": {
-            "collection": "frontpage"
-          }
+        "image_YGwpPW": {
+          "type": "image",
+          "settings": {}
         },
-        "product_WME9z4": {
-          "type": "product",
-          "settings": {
-            "product": "product_template_10",
-            "second_image": false
-          }
+        "image_kd3ghA": {
+          "type": "image",
+          "settings": {}
         }
       },
       "block_order": [
         "image_JtY9R7",
-        "product_YrmTe4",
-        "collection_p3CAaB",
-        "product_WME9z4"
+        "image_brnKdG",
+        "image_YGwpPW",
+        "image_kd3ghA"
       ],
       "settings": {
         "heading": "Multimedia collage",
@@ -279,6 +313,7 @@
     }
   },
   "order": [
+    "rich_text_3nAVKh",
     "collage_BMehgx",
     "featured-collection",
     "collection_list_zymGNA",
