@@ -92,12 +92,11 @@
   background-color: green;
 }
 .btn-green,.btn-yellow,.btn-red{
-  border-color: black;
+  border-color: black !important;
 }
 
 .btn-blue{
-  border-color: white;
-  color: white;
+  border-color: white !important;
 }
 
 .yellow{
