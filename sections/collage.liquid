@@ -65,13 +65,14 @@
                   </div>
                 </div>
                 <div
-                  class="media media--transparent ratio img__hover"
+                  class="media media--transpare nt ratio img__hover"
                   {% if block.settings.image != blank %}
                     style="--ratio-percent: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%"
                   {% else %}
                     style="{% unless forloop.index==2 or forloop.index==3 %}height:80%;{% endunless %}--ratio-percent: 100%"
                   {% endif %}
                 >
+                <div class="img__zoom">
                   {%- if block.settings.image != blank -%}
                     {%- liquid
                       if section.settings.desktop_layout == 'left'
@@ -113,6 +114,7 @@
                   {%- else -%}
                     {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
                   {%- endif -%}
+                </div>
                 </div>
               </div>
             {%- when 'product' -%}
