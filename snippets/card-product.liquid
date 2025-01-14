@@ -51,7 +51,25 @@
         {% if card_product.featured_media == nil and settings.card_style == 'card' %} ratio{% endif %}
         {% if horizontal_class %} card--horizontal{% endif %}
       "
-      style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%; padding:1rem;"
+      style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%; padding:1rem;
+      {% if forloop.index == 1%}
+      background-color:green;
+      {% endif %}
+      {% if forloop.index == 2%}
+      background-color:blue;
+      {% endif %}
+      {% if forloop.index == 3%}
+      background-color:red;
+      {% endif %}
+      {% if forloop.index == 4%}
+      background-color:yellow;
+      {% endif %}
+      {% if forloop.index == 5%}
+      background-color:orange;
+      {% endif %}
+      {% if forloop.index == 6%}
+      background-color:purple;
+      {% endif %}"
     >
       <div
         class="card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if card_product.featured_media or settings.card_style == 'standard' %} ratio{% endif %}"
