@@ -21,7 +21,10 @@
 <div class="color-{{ section.settings.color_scheme }} gradient isolate">
   <div class="page-width section-{{ section.id }}-padding">
     {%- if section.settings.heading != blank -%}
-      <h2 class="collage-wrapper-title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+      <h2
+        class="collage-wrapper-title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        style="font-weight: bold !important;"
+      >
         {{ section.settings.heading }}
       </h2>
     {%- endif -%}
@@ -49,37 +52,47 @@
                     {% endif %}
                   "
                 >
-                  <div class="item__tag" style="font-size: 12px; border: solid black; border-radius:2rem; background-color:black; width:max-content ">
-                    <p style="color: white; padding:0 0.8rem; margin:0;">
+                  <div style="flex-direction: column;">
+                    <div
+                      class="item__tag"
+                      style="font-size: 12px; border: solid black; border-radius:2rem; background-color:black; width:max-content "
+                    >
+                      <p style="color: white; padding:0 0.8rem; margin:0;">
+                        {% if forloop.index == 1 %}
+                          01
+                        {% endif %}
+                        {% if forloop.index == 2 %}
+                          02
+                        {% endif %}
+                        {% if forloop.index == 3 %}
+                          03
+                        {% endif %}
+                        {% if forloop.index == 4 %}
+                          04
+                        {% endif %}
+                      </p>
+                    </div>
+                    <h2
+                      class="
+                        collage__header {% if forloop.index == 3 %}blue
+                        {% endif %}
+                      "
+                      style="width: 70%; margin:0; color:black;"
+                    >
                       {% if forloop.index == 1 %}
-                        1
+                        MBTI x Perfume
                       {% endif %}
                       {% if forloop.index == 2 %}
-                        2
+                        Doggy With You
                       {% endif %}
                       {% if forloop.index == 3 %}
-                        3
+                        Talent Charm
                       {% endif %}
                       {% if forloop.index == 4 %}
-                        4
+                        Aussie Studying Style
                       {% endif %}
-                    </p>
+                    </h2>
                   </div>
-                  <h2 class="collage__header {% if forloop.index == 3 %}blue
-                    {% endif %}" style="width: 70%; margin:0; color:black;">
-                    {% if forloop.index == 1 %}
-                      MBTI x Perfume
-                    {% endif %}
-                    {% if forloop.index == 2 %}
-                      Doggy With You
-                    {% endif %}
-                    {% if forloop.index == 3 %}
-                      Talent Charm
-                    {% endif %}
-                    {% if forloop.index == 4 %}
-                      Aussie Studying Style
-                    {% endif %}
-                  </h2>
                   <div style="position: relative; padding:0 20px 0 20px; width:100%; height:inherit">
                     <button
                       class="btn{%if forloop.index == 2 or forloop.index==3 %}__left {% endif %}"
