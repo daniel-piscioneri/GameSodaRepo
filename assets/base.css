@@ -1074,20 +1074,20 @@ summary::-webkit-details-marker {
     height: 400px;
   }
 
-  .mulitcol-red{
-    background-color: red;
+  .multicol-red{
+    background-color: red !important;
   }
 
-  .mulitcol-blue{
-    background-color: blue;
+  .multicol-blue{
+    background-color: blue !important;
   }
 
-  .mulitcol-green{
-    background-color: green;
+  .multicol-green{
+    background-color: green !important;
   }
 
-  .mulitcol-yellow{
-    background-color: yellow;
+  .multicol-yellow{
+    background-color: yellow !important;
   }
 
   .scroll-trigger:not(.scroll-trigger--offscreen) .slider--desktop {
