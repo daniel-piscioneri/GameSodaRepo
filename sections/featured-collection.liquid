@@ -102,7 +102,24 @@
             class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
-              style="--animation-order: {{ forloop.index }};"
+              style="--animation-order: {{ forloop.index }};{% if forloop.index == 1%}
+      background-color:green;
+      {% endif %}
+      {% if forloop.index == 2%}
+      background-color:blue;
+      {% endif %}
+      {% if forloop.index == 3%}
+      background-color:red;
+      {% endif %}
+      {% if forloop.index == 4%}
+      background-color:yellow;
+      {% endif %}
+      {% if forloop.index == 5%}
+      background-color:orange;
+      {% endif %}
+      {% if forloop.index == 6%}
+      background-color:purple;
+      {% endif %}"
             {% endif %}
           >
             {% render 'card-product',
