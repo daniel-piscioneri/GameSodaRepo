@@ -1070,29 +1070,30 @@ summary::-webkit-details-marker {
     padding: 0;
   }
 
-  .height__var{
-    height: 400px;
-  }
-
-  .multicol-red{
-    background-color: red !important;
-  }
-
-  .multicol-blue{
-    background-color: blue !important;
-  }
-
-  .multicol-green{
-    background-color: green !important;
-  }
-
-  .multicol-yellow{
-    background-color: yellow !important;
-  }
-
   .scroll-trigger:not(.scroll-trigger--offscreen) .slider--desktop {
     animation: var(--animation-slide-in);
   }
+}
+
+.height__var{
+  height: 400px;
+}
+
+.multicol-red{
+  background-color: red !important;
+}
+
+.multicol-blue{
+  background-color: blue !important;
+  color: white;
+}
+
+.multicol-green{
+  background-color: green !important;
+}
+
+.multicol-yellow{
+  background-color: yellow !important;
 }
 
 @media screen and (min-width: 990px) {
