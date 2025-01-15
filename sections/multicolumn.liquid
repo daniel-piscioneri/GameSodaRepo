@@ -124,6 +124,9 @@
                   {% if forloop.index == 2 or forloop.index == 4 %}
                   height:180px
                   {% endif %}
+                  {% if forloop.index == 1 or forloop.index == 3 %}
+                  height:80px
+                  {% endif %}
                 "
               >
                 {%- if block.settings.title != blank -%}
