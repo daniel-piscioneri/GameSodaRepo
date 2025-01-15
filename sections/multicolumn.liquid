@@ -86,14 +86,22 @@
                       media media--transparent media--{{ section.settings.image_ratio }}{% if forloop.index == 1 or forloop.index == 3 %}
                       height__var
                       {% endif %}
+                      multicol
+                      {% if forloop.index == 1 %}
+                      -red
+                      {% endif %}
+                      {% if forloop.index == 2 %}
+                      -blue
+                      {% endif %}
+                      {% if forloop.index == 3 %}
+                      -green
+                      {% endif %}
+                      {% if forloop.index == 4 %}
+                      -yellow
+                      {% endif %}
                     "
                     {% if section.settings.image_ratio == 'adapt' %}
-                      style="
-                        padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;
-                        {% if forloop.index == 1 or forloop.index == 3 %}
-                        background-color:red;
-                        {% endif %}
-                      "
+                      style="                        padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
                     {% endif %}
                   >
                     {%- liquid

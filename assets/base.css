@@ -1074,6 +1074,22 @@ summary::-webkit-details-marker {
     height: 400px;
   }
 
+  .mulitcol-red{
+    background-color: red;
+  }
+
+  .mulitcol-blue{
+    background-color: blue;
+  }
+
+  .mulitcol-green{
+    background-color: green;
+  }
+
+  .mulitcol-yellow{
+    background-color: yellow;
+  }
+
   .scroll-trigger:not(.scroll-trigger--offscreen) .slider--desktop {
     animation: var(--animation-slide-in);
   }
