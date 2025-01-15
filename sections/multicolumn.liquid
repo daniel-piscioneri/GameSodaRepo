@@ -118,7 +118,14 @@
                   </div>
                 </div>
               {%- endif -%}
-              <div class="multicolumn-card__info multicol__card__height">
+              <div
+                class="multicolumn-card__info multicol__card__height"
+                style="
+                  {% if forloop.index == 2 or forloop.index == 4 %}
+                  height:180px
+                  {% endif %}
+                "
+              >
                 {%- if block.settings.title != blank -%}
                   <h3 class="inline-richtext">{{ block.settings.title }}</h3>
                 {%- endif -%}
@@ -129,15 +136,16 @@
                   <a
                     class="link animate-arrow"
                     {% if block.settings.link == blank %}
-                      role="link" aria-disabled="true"
+                      role="link"
+                      aria-disabled="true"
                     {% else %}
                       href="{{ block.settings.link }}"
                     {% endif %}
                   >
                     {{- block.settings.link_label | escape -}}
-                    <span class="svg-wrapper"
-                      ><span class="icon-wrap">&nbsp;{{ 'icon-arrow.svg' | inline_asset_content }}</span></span
-                    >
+                    <span class="svg-wrapper">
+                      <span class="icon-wrap">&nbsp;{{ 'icon-arrow.svg' | inline_asset_content }}</span>
+                    </span>
                   </a>
                 {%- endif -%}
               </div>
@@ -178,7 +186,8 @@
         <a
           class="button button--primary"
           {% if section.settings.button_link == blank %}
-            role="link" aria-disabled="true"
+            role="link"
+            aria-disabled="true"
           {% else %}
             href="{{ section.settings.button_link }}"
           {% endif %}
