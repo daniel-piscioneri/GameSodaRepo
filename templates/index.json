@@ -90,6 +90,7 @@
     },
     "featured-collection": {
       "type": "featured-collection",
+      "custom_css": [],
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
@@ -97,8 +98,8 @@
         "show_description": false,
         "description_style": "body",
         "collection": "all",
-        "products_to_show": 22,
-        "columns_desktop": 6,
+        "products_to_show": 4,
+        "columns_desktop": 3,
         "full_width": true,
         "show_view_all": false,
         "view_all_style": "solid",
