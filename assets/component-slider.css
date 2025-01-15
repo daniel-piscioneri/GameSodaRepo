@@ -231,7 +231,7 @@ slider-component.slider-component-full-width {
 }
 
 .center__grid {
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .slider::-webkit-scrollbar {
