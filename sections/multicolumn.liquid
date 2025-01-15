@@ -82,12 +82,16 @@
                 {% endif %}
                 <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
                   <div
-                    class="media media--transparent media--{{ section.settings.image_ratio }}"
+                    class="
+                      media media--transparent media--{{ section.settings.image_ratio }}{% if forloop.index == 1 or forloop.index == 3 %}
+                      height__var
+                      {% endif %}
+                    "
                     {% if section.settings.image_ratio == 'adapt' %}
                       style="
                         padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;
                         {% if forloop.index == 1 or forloop.index == 3 %}
-                        height:400px
+                        height:400px;
                         {% endif %}
                       "
                     {% endif %}
