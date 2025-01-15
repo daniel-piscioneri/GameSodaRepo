@@ -1067,6 +1067,7 @@ summary::-webkit-details-marker {
     animation: none;
     opacity: 1;
     transform: inherit;
+    padding: 0;
   }
 
   .scroll-trigger:not(.scroll-trigger--offscreen) .slider--desktop {
