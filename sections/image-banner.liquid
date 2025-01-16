@@ -123,7 +123,9 @@
       class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient"
       style="
         max-width: 100%;
-        width:100%
+        width:100%;
+        border-radius:0;
+        background:green;
       "
     >
       {%- for block in section.blocks -%}
@@ -137,11 +139,12 @@
             </h2>
           {%- when 'text' -%}
             <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
-              <p>{{ block.settings.text }}</p>
+              <p style="font-size:1.5rem">{{ block.settings.text }}</p>
             </div>
           {%- when 'buttons' -%}
             <div
               class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
+              style="border:solid 1px black; border-radius:1rem;"
               {{ block.shopify_attributes }}
             >
               {%- if block.settings.button_label_1 != blank -%}
@@ -152,6 +155,7 @@
                     href="{{ block.settings.button_link_1 }}"
                   {% endif %}
                   class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
+                  style="opacity:1; box-shadow:none;"
                 >
                   {{- block.settings.button_label_1 | escape -}}
                 </a>
