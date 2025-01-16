@@ -77,7 +77,7 @@
           >
             <div
               class="
-                                                                                                                                                                                                                                                                multicolumn-card content-container multicol{% if forloop.index == 1 %}-red{% endif %}{% if forloop.index == 2 %}-blue{% endif %}{% if forloop.index == 3 %}-green{% endif %}{% if forloop.index == 4 %}-yellow{% endif %}
+                                                                                                                                                                                                                                                                                                                multicolumn-card content-container multicol{% if forloop.index == 1 %}-red{% endif %}{% if forloop.index == 2 %}-blue{% endif %}{% if forloop.index == 3 %}-green{% endif %}{% if forloop.index == 4 %}-yellow{% endif %}
               "
             >
               {%- if block.settings.image != blank -%}
@@ -140,7 +140,7 @@
                 "
               >
                 {%- if block.settings.title != blank -%}
-                  <div style="flex-direction: column;">
+                  <div style="flex-direction: column; display:flex;">
                     <div
                       class="item__tag"
                       style="font-size: 12px; border: solid black; border-radius:2rem; background-color:black; width:max-content "
@@ -167,6 +167,8 @@
                         {% if forloop.index == 2 %}
                         color:white;
                         {% endif %}
+                        width:80%;
+                        font-size: calc(var(--font-heading-scale)* 1.5rem);
                       "
                     >
                       {{ block.settings.title }}

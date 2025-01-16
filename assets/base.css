@@ -1105,7 +1105,7 @@ summary::-webkit-details-marker {
   float: right;
   position: fixed;
   bottom: 2%;
-  font-size-adjust: calc(var(--font-body-scale)* .7);
+  font-size-adjust: calc(var(--font-body-scale)* .5);
   left: 50%;
   transform: translate(-50%);
 }
