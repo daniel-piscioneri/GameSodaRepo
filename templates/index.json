@@ -190,21 +190,21 @@
         "heading_a9zHLi": {
           "type": "heading",
           "settings": {
-            "heading": "Our Mission",
-            "heading_size": "h1"
+            "heading": "<strong>Bringing Games and Community Together</strong>",
+            "heading_size": "h2"
           }
         },
         "text_VDmf44": {
           "type": "text",
           "settings": {
-            "text": "Click the button below to understand our teams mission and join in our fight.",
-            "text_style": "body"
+            "text": "At GameSoda, we believe in the power of games to connect and inspire. Whether you're playing with friends or discovering your personality traits, our goal is to create unforgettable experiences.",
+            "text_style": "caption-with-letter-spacing"
           }
         },
         "buttons_C8pzp8": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Understand Us",
+            "button_label_1": "Join Our Mission",
             "button_link_1": "",
             "button_style_secondary_1": false,
             "button_label_2": "",
@@ -226,9 +226,9 @@
         "desktop_content_alignment": "left",
         "color_scheme": "",
         "image_behavior": "none",
-        "mobile_content_alignment": "center",
+        "mobile_content_alignment": "left",
         "stack_images_on_mobile": true,
-        "show_text_below": true
+        "show_text_below": false
       }
     },
     "featured_blog_6HDb73": {
