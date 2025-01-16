@@ -144,7 +144,7 @@
           {%- when 'buttons' -%}
             <div
               class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
-              style="border:solid 1px black; border-radius:1rem;"
+              style="border:solid 1px black; border-radius:1rem; --alpha-button-background:0;"
               {{ block.shopify_attributes }}
             >
               {%- if block.settings.button_label_1 != blank -%}
@@ -155,7 +155,7 @@
                     href="{{ block.settings.button_link_1 }}"
                   {% endif %}
                   class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
-                  style="opacity:1; box-shadow:none;"
+                  style="opacity:1; box-shadow:none;background:transparent;"
                 >
                   {{- block.settings.button_label_1 | escape -}}
                 </a>
