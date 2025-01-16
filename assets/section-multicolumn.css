@@ -10,6 +10,14 @@
   height: 30px
 }
 
+@media (max-width: 768px) {
+  .multicol__height{
+    height: 80px;
+  }
+}
+
+
+
 .multicol__width{
   width:2000px;
 }
