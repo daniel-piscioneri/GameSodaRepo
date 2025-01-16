@@ -133,7 +133,13 @@
                   {{ article.content | strip_html | truncatewords: 21 }}
                 {%- endif -%}
               </p>
-              <a href="{{ article.url }}" class="full-unstyled-link"> Find Out More </a>
+              <a
+                href="{{ article.url }}"
+                class="full-unstyled-link"
+                style="border: solid 1px black; border-radius:1rem;"
+              >
+                Find Out More
+              </a>
             {%- endif -%}
             <div class="article-card__footer">
               {%- if article.comments_count > 0 and blog.comments_enabled? -%}
