@@ -77,7 +77,7 @@
           >
             <div
               class="
-                                                                                                multicolumn-card content-container multicol{% if forloop.index == 1 %}-red{% endif %}{% if forloop.index == 2 %}-blue{% endif %}{% if forloop.index == 3 %}-green{% endif %}{% if forloop.index == 4 %}-yellow{% endif %}
+                                                                                                                                multicolumn-card content-container multicol{% if forloop.index == 1 %}-red{% endif %}{% if forloop.index == 2 %}-blue{% endif %}{% if forloop.index == 3 %}-green{% endif %}{% if forloop.index == 4 %}-yellow{% endif %}
               "
             >
               {%- if block.settings.image != blank -%}
@@ -149,6 +149,26 @@
                   >
                     {{ block.settings.title }}
                   </h3>
+                  <div style="position: relative; padding:0 20px 0 20px; width:100%; height:inherit">
+                    <button
+                      class="btn"
+
+                      style="background-color:transparent;border: none; border-radius:2rem; margin-bottom:1rem;"
+                    >
+                      <a
+                        class="
+                          btn-{% if forloop.index == 1 %}green
+                          {% endif %}{% if forloop.index == 2 %}yellow
+                          {% endif %}{% if forloop.index == 3 %}blue
+                          {% endif %}{% if forloop.index == 4 %}red
+                          {% endif %}
+                        "
+                        style="text-decoration:none;color:white;font-weight:100;border:1px solid;border-radius:3rem;padding:12px 20px;"
+                        href="https://gamesoda.myshopify.com/pages/about"
+                        >Find Out More</a
+                      >
+                    </button>
+                  </div>
                 {%- endif -%}
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
