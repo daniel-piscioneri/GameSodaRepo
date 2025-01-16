@@ -94,7 +94,7 @@
                     </h2>
                   </div>
                   <div
-                    class="collage__btn__style"
+                    class="collage__btn__style{% if forloop.index == 3 %}_blue{% endif %}%}"
                   >
                     <button
                       class="btn{%if forloop.index == 2 or forloop.index==3 %}__left {% endif %}"

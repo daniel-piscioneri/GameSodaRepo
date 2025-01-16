@@ -164,12 +164,16 @@
   .collage__btn__style{
     padding: 0;
   }
+  .collage__btn__style_blue{
+    padding-left: 2rem;
+  }
   .btn__left{
     top: 200%;
   }
   .btn {
     bottom: 280%;
   }
+
 }
 
 .collage-card {
