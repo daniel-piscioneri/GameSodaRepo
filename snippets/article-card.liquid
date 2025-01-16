@@ -114,9 +114,7 @@
       <div class="card__content">
         <div class="card__information">
           <h3 class="card__heading{% if show_excerpt %} h2{% endif %}">
-            <a href="{{ article.url }}" class="full-unstyled-link">
-              {{ article.title | truncate: 50 | escape }}
-            </a>
+            {{ article.title | truncate: 50 | escape }}
           </h3>
           <div class="article-card__info caption-with-letter-spacing h5">
             {%- if show_date -%}
@@ -135,6 +133,7 @@
                   {{ article.content | strip_html | truncatewords: 21 }}
                 {%- endif -%}
               </p>
+              <a href="{{ article.url }}" class="full-unstyled-link"> Find Out More </a>
             {%- endif -%}
             <div class="article-card__footer">
               {%- if article.comments_count > 0 and blog.comments_enabled? -%}
