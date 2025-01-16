@@ -124,7 +124,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/thumbnail-image-vector-graphic.jpg",
-            "title": "Column",
+            "title": "Alexandra Sun",
             "text": "",
             "link_label": "",
             "link": ""
@@ -134,7 +134,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/thumbnail-image-vector-graphic.jpg",
-            "title": "Column",
+            "title": "Brian Kwan",
             "text": "",
             "link_label": "",
             "link": ""
@@ -144,7 +144,17 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/thumbnail-image-vector-graphic.jpg",
-            "title": "Column",
+            "title": "Lila Mei",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_heij4y": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/thumbnail-image-vector-graphic.jpg",
+            "title": "Ethan Rivera",
             "text": "",
             "link_label": "",
             "link": ""
@@ -154,14 +164,15 @@
       "block_order": [
         "column_WcFfeT",
         "column_PKgBFY",
-        "column_hLjzLe"
+        "column_hLjzLe",
+        "column_heij4y"
       ],
       "settings": {
         "title": "Multicolumn",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "square",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "column_alignment": "center",
         "background_style": "primary",
         "button_label": "",
