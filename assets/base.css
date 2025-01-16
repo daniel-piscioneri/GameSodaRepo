@@ -3017,6 +3017,7 @@ details-disclosure>details {
   background: rgb(var(--color-background));
   background: linear-gradient(180deg, #e9b3ff 0%, var(--token-0e76e18f-242f-4869-bfe7-6d41550f64c8, rgb(230, 255, 224)) 150.46180158593484%);
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 @media screen and (forced-colors: active) {
