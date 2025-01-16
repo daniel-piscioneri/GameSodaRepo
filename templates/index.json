@@ -257,7 +257,7 @@
             "heading": "Join the Club",
             "heading_size": "h2",
             "subheading": "Click below to join our newsletter and be notified of any upcoming news!",
-            "button_label": "Subscribe",
+            "button_label": "",
             "link": "shopify://pages/contact",
             "button_style_secondary": false,
             "box_align": "middle-center",
