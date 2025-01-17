@@ -1082,7 +1082,7 @@ summary::-webkit-details-marker {
 
 .height__var {
   /* height: 400px; */
-  height: calc(var(--viewport-height));
+  height: calc(var(--viewport-height)*0.5);
 }
 
 .multicol-red {
