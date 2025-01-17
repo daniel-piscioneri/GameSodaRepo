@@ -208,9 +208,9 @@
     top: 80%;
     font-size-adjust: calc(var(--font-body-scale)*0.3);
   }
-  .btn:nth-child(4)
+  .btn_four
   {
-    bottom: 350%;
+    bottom: 350% !important;
   }
 }
 
