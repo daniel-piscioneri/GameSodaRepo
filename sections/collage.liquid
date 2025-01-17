@@ -28,7 +28,10 @@
         {{ section.settings.heading }}
       </h2>
     {%- endif -%}
-    <div class="collage{% if section.settings.mobile_layout == 'collage' %} collage--mobile{% endif %}">
+    <div
+      class="collage{% if section.settings.mobile_layout == 'collage' %} collage--mobile{% endif %}"
+      style="max-width:80%;justify-self:center;"
+    >
       {% assign skip_card_product_styles = false %}
       {%- for block in section.blocks -%}
         <div

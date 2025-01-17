@@ -72,6 +72,7 @@
   line-height: initial;
   height: inherit;
   font-weight: 1000;
+  font-size: 2rem;
 }
 
 .img__hover:hover .img__zoom {
@@ -199,6 +200,13 @@
   }
 }
 
+@media (max-width:749px) {
+  .btn__left {
+    top:20px;
+    right: 0;
+  }
+}
+
 @media (max-width:922px) {
   .btn {
     bottom: 160%;
@@ -218,6 +226,9 @@
   .btn__left{
     top: 20px;
     right: 0;
+  }
+  .btn{
+    bottom: 280%;
   }
 }
 
