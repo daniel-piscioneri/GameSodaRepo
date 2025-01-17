@@ -214,7 +214,7 @@
   }
 }
 
-@media (max-width:500) {
+@media (max-width:500px) {
   .btn__left{
     top: 20px;
     right: 0;
