@@ -12,7 +12,7 @@
 
 @media (max-width: 768px) {
   .multicol__height{
-    height: 80px;
+    height: 80px !important;
   }
 }
 
