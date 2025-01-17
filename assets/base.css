@@ -1103,7 +1103,7 @@ summary::-webkit-details-marker {
 
 .btn__multicol {
   float: right;
-  position: fixed;
+  position: relative;
   bottom: 2%;
   font-size-adjust: calc(var(--font-body-scale)* .5);
   left: 50%;
