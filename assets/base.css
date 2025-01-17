@@ -1081,7 +1081,8 @@ summary::-webkit-details-marker {
 }
 
 .height__var {
-  height: 400px;
+  /* height: 400px; */
+  height: calc(var(--viewport-height));
 }
 
 .multicol-red {

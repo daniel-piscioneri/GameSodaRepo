@@ -39,7 +39,7 @@
           {{ block.shopify_attributes }}
           {% if settings.animations_reveal_on_scroll %}
             data-cascade
-            style="--animation-order: {{ forloop.index }};"
+            style="--animation-order: {{ forloop.index }}; height:60rem"
           {% endif %}
         >
           {%- assign placeholder_image_index = forloop.index0 | modulo: 4 | plus: 1 -%}
@@ -80,7 +80,7 @@
                         collage__header {% if forloop.index == 3 %}blue
                         {% endif %}
                       "
-                      style="width: 70%; margin:0; color:black;"
+                      style="width: 100%; margin:0; color:black;"
                     >
                       {% if forloop.index == 1 %}
                         MBTI x Perfume
