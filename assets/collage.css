@@ -140,7 +140,7 @@
   }
 }
 
-@media (max-width:1032px) {
+@media (max-width:1100px) {
   .collage__header {
     font-size-adjust: calc((var(--font-heading-scale)*0.38));
   }
