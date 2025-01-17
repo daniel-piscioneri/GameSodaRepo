@@ -186,10 +186,21 @@
   }
 }
 
+@media (max-width:814) {
+  .btn__left{
+    top: 200%;
+    right: 50%;
+  }
+}
+
 @media (max-width:922px) {
   .btn {
-    bottom: 110%;
-    font-size-adjust: calc(var(--font-body-scale)*0.4);
+    bottom: 160%;
+    font-size-adjust: calc(var(--font-body-scale)*0.3);
+  }
+  .btn__left {
+    top: 160%;
+    font-size-adjust: calc(var(--font-body-scale)*0.3);
   }
 }
 
