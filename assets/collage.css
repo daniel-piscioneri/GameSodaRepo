@@ -136,13 +136,16 @@
     font-size-adjust: calc((var(--font-heading-scale)*0.6));
   }
   .btn{
-    font-size-adjust: calc(var(--font-body-scale)*0.5);
+    font-size-adjust: calc(var(--font-body-scale)*0.5) !important ;
   }
 }
 
 @media (max-width:1032px) {
   .collage__header {
     font-size-adjust: calc((var(--font-heading-scale)*0.38));
+  }
+  .btn{
+    font-size-adjust: calc(var(--font-body-scale)*.35) !important;
   }
 }
 
