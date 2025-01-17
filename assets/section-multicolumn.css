@@ -12,12 +12,20 @@
 
 @media (max-width: 768px) {
   .multicol__height{
-    height: 80px !important;
+    height: 80px;
+  }
+
+  .multicol__height_sml{
+    height: 80px;
   }
 }
 
 .multicol__height{
-  height: 180px !important;
+  height: 180px;
+}
+
+.multicol__height_sml{
+  height: 80px;
 }
 
 .multicol__width{
