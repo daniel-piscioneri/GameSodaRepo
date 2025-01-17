@@ -77,7 +77,7 @@
           >
             <div
               class="
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                multicolumn-card content-container multicol{% if forloop.index == 1 %}-red{% endif %}{% if forloop.index == 2 %}-blue{% endif %}{% if forloop.index == 3 %}-green{% endif %}{% if forloop.index == 4 %}-yellow{% endif %}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                multicolumn-card content-container multicol{% if forloop.index == 1 %}-red{% endif %}{% if forloop.index == 2 %}-blue{% endif %}{% if forloop.index == 3 %}-green{% endif %}{% if forloop.index == 4 %}-yellow{% endif %}
               "
             >
               {%- if block.settings.image != blank -%}
@@ -180,7 +180,10 @@
                     </h3>
                   </div>
 
-                  <div style="position: relative; padding:0 20px 0 20px; width:100%;">
+                  <div
+                    class="{%if forloop.index == 2 or forloop.index==4%}high_btn{% endif %}"
+                    style="position: relative; padding:0 20px 0 20px; width:100%;"
+                  >
                     <button
                       class="btn__multicol"
 

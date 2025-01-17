@@ -45,6 +45,10 @@
   }
 }
 
+.high_btn{
+  top:55%;
+}
+
 @media screen and (max-width: 989px) {
   .multicolumn .page-width {
     padding-left: 0;
