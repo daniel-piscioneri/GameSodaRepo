@@ -1,19 +1,19 @@
 @media (max-width: 768px) {
   .multicol__height{
-    height: 80px;
+    height: 80px !important;
   }
 
   .multicol__height_sml{
-    height: 80px;
+    height: 80px !important;
   }
 }
 
 .multicol__height{
-  height: 180px;
+  height: 180px !important;
 }
 
 .multicol__height_sml{
-  height: 80px;
+  height: 80px !important;
 }
 
 .multicol__card__height:nth-child(1){
