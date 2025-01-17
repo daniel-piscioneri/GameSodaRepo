@@ -1110,6 +1110,12 @@ summary::-webkit-details-marker {
   transform: translate(-50%);
 }
 
+@media (max-width:1180) {
+  .btn__multicol{
+    font-size-adjust: calc(var(--font-body-scale)* .3);
+  }
+}
+
 @media screen and (min-width: 990px) {
   .grid--1-col-desktop {
     flex: 0 0 100%;
