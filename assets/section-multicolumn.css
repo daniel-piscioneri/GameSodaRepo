@@ -16,7 +16,9 @@
   }
 }
 
-
+.multicol__height{
+  height: 180px !important;
+}
 
 .multicol__width{
   width:2000px;
