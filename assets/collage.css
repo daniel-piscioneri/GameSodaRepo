@@ -214,6 +214,13 @@
   }
 }
 
+@media (max-width:500) {
+  .btn__left{
+    top: 20px;
+    right: 0;
+  }
+}
+
 .collage-card {
   height: 100%;
   display: flex;
