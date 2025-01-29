@@ -236,7 +236,7 @@
   }
 
   .btn__left {
-    top: 80%;
+    /* top: 80%; */
     font-size-adjust: calc(var(--font-body-scale)*0.3);
   }
 
@@ -251,6 +251,7 @@
     margin-top: -5vh;
     float: right;
     right: 0;
+    bottom: 0;
   }
 }
 
