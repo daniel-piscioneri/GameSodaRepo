@@ -221,10 +221,11 @@
 }
 
 @media (max-width:749px) {
-  .btn__left {
-    top: 20px;
+  .btn__left,.btn {
+    position: absolute;
+    margin-top: -5vh;
+    float: right;
     right: 0;
-    float:right;
   }
 }
 
@@ -238,11 +239,17 @@
     top: 80%;
     font-size-adjust: calc(var(--font-body-scale)*0.3);
   }
+
+  .collage__header{
+    font-size-adjust: calc(var(--font-body-scale)*0.3);
+  }
 }
 
 @media (max-width:500px) {
-  .btn__left {
-    top: 20px;
+  .btn__left, .btn {
+    position: absolute;
+    top: 0;
+    float: right;
     right: 0;
   }
 
