@@ -12,6 +12,10 @@
   width: 100%;
 }
 
+.collage__item {
+  max-height: 45vh;
+}
+
 .collage__item .card__content {
   flex-grow: initial;
 }

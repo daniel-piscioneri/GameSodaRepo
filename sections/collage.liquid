@@ -30,7 +30,7 @@
     {%- endif -%}
     <div
       class="collage{% if section.settings.mobile_layout == 'collage' %} collage--mobile{% endif %}"
-      style="max-width:80%;justify-self:center;"
+      style="justify-self:center;"
     >
       {% assign skip_card_product_styles = false %}
       {%- for block in section.blocks -%}
@@ -55,10 +55,10 @@
                     {% endif %}
                   "
                 >
-                  <div style="flex-direction: column;">
+                  <div style="display:flex;flex-direction: row;">
                     <div
                       class="item__tag"
-                      style="font-size: 12px; border: solid black; border-radius:2rem; background-color:black; width:max-content "
+                      style="font-size: 12px; border: solid black; border-radius:2rem; background-color:black; width:max-content;height:max-content;margin-right:.5vw"
                     >
                       <p style="color: white; padding:0 0.8rem; margin:0;">
                         {% if forloop.index == 1 %}
