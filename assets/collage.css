@@ -5,6 +5,7 @@
 
 .collage {
   display: grid;
+  width: 90vw;
 }
 
 .collage__item>* {
