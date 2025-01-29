@@ -224,6 +224,7 @@
   .btn__left {
     top: 20px;
     right: 0;
+    float:right;
   }
 }
 
@@ -236,10 +237,6 @@
   .btn__left {
     top: 80%;
     font-size-adjust: calc(var(--font-body-scale)*0.3);
-  }
-
-  .btn_four {
-    bottom: 350% !important;
   }
 }
 
