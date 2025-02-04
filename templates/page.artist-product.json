@@ -43,7 +43,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "artist",
+        "collection": "alex",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,
@@ -136,7 +136,7 @@
   "order": [
     "custom_liquid_nDqMm9",
     "main",
-    "featured_collection_AXX8Q3",
-    "featured_product_xUmz8X"
+    "featured_product_xUmz8X",
+    "featured_collection_AXX8Q3"
   ]
 }
