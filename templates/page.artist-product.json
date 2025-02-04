@@ -20,6 +20,7 @@
     },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "custom_css": [
         "div {min-width: 85%;}"
       ],
