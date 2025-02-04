@@ -11,6 +11,9 @@
   "sections": {
     "custom_liquid_JNBgYC": {
       "type": "custom-liquid",
+      "custom_css": [
+        "* {max-width: 100%; justify-content:center; text-align:center;}"
+      ],
       "settings": {
         "custom_liquid": "{% if product.metafields.custom.quiz_type %}\n    <h2>Quiz: {{ product.metafields.custom.quiz_type }}</h2>\n    <p>{{ product.metafields.custom.quiz_description }}</p>\n{% endif %}\n\n{% if product.metafields.custom.artist_name %}\n    <h2>Artist: {{ product.metafields.custom.artist_name }}</h2>\n    <p>{{ product.metafields.custom.artist_description | newline_to_br}}</p>\n{% endif %}",
         "color_scheme": "",
