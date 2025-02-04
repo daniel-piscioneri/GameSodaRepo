@@ -76,7 +76,7 @@
       "custom_css": [],
       "settings": {
         "product": "product_template_2",
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "secondary_background": false,
         "media_size": "medium",
         "constrain_to_viewport": true,
