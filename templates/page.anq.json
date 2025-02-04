@@ -16,6 +16,19 @@
         "padding_bottom": 36
       }
     },
+    "custom_liquid_gdJnUL": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "* {max-width: 100%; align-items: center;}",
+        "p {width: 80%; text-align: left;}"
+      ],
+      "settings": {
+        "custom_liquid": "{% if page.metafields.custom.artist_page %}\n    <div class=\"artist-section\">\n        <p>{{ page.metafields.custom.artist_page | newline_to_br }}</p>\n    </div>\n{% endif %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "featured_collection_tmtRTD": {
       "type": "featured-collection",
       "custom_css": [
@@ -50,7 +63,7 @@
     "featured_collection_mbGWdM": {
       "type": "featured-collection",
       "custom_css": [
-        "*{justify-content:center;}"
+        "* {justify-content: center;}"
       ],
       "settings": {
         "title": "Maya",
@@ -81,6 +94,7 @@
   },
   "order": [
     "main",
+    "custom_liquid_gdJnUL",
     "featured_collection_tmtRTD",
     "featured_collection_mbGWdM"
   ]
