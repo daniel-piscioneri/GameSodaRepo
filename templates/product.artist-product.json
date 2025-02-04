@@ -12,7 +12,7 @@
     "custom_liquid_JNBgYC": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<h2>{{ product.metafields.custom.quiz_type }}</h2>\n<p>{{ product.metafields.custom.artist_name }}</p>",
+        "custom_liquid": "{% if product.metafields.custom.quiz_type %}\n    <h2>Quiz: {{ product.metafields.custom.quiz_type }}</h2>\n    <p>{{ product.metafields.custom.quiz_description }}</p>\n{% endif %}\n\n{% if product.metafields.custom.artist_name %}\n    <h2>Artist: {{ product.metafields.custom.artist_name }}</h2>\n    <p>{{ product.metafields.custom.artist_description }}</p>\n{% endif %}",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
