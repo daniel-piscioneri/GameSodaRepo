@@ -25,77 +25,79 @@
         {%- when 'heading' -%}
           <div class="subscribe__social_link-footer">
         {%- when 'email_form' -%}
-          <div {{ block.shopify_attributes }} class="newsletter__input__block">
-            {% form 'customer', class: 'newsletter-form' %}
-              <input type="hidden" name="contact[tags]" value="newsletter">
-              <div
-                class="newsletter-form__field-wrapper{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-                {% if settings.animations_reveal_on_scroll %}
-                  data-cascade
-                  style="--animation-order: {{ forloop.index }};"
-                {% endif %}
-              >
-                <div class="field">
-                  <input
-                    id="NewsletterForm--{{ section.id }}"
-                    type="email"
-                    name="contact[email]"
-                    class="field__input"
-                    value="{{ form.email }}"
-                    aria-required="true"
-                    autocorrect="off"
-                    autocapitalize="off"
-                    autocomplete="email"
-                    {% if form.errors %}
-                      autofocus
-                      aria-invalid="true"
-                      aria-describedby="Newsletter-error--{{ section.id }}"
-                    {% elsif form.posted_successfully? %}
-                      aria-describedby="Newsletter-success--{{ section.id }}"
-                    {% endif %}
-                    placeholder="{{ 'newsletter.label' | t }}"
-                    required
-                  >
-                  <label class="field__label" for="NewsletterForm--{{ section.id }}">
-                    {{ 'newsletter.label' | t }}
-                  </label>
-                  <button
-                    type="submit"
-                    class="newsletter-form__button field__button"
-                    name="commit"
-                    id="Subscribe"
-                    aria-label="{{ 'newsletter.button_label' | t }}"
-                  >
-                    <span class="svg-wrapper">
-                      {{- 'icon-arrow.svg' | inline_asset_content -}}
-                    </span>
-                  </button>
-                </div>
-                {%- if form.errors -%}
-                  <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
-                    <span class="svg-wrapper">
-                      {{- 'icon-error.svg' | inline_asset_content -}}
-                    </span>
-                    {{- form.errors.translated_fields.email | capitalize }}
-                    {{ form.errors.messages.email -}}
-                  </small>
-                {%- endif -%}
-              </div>
-              {%- if form.posted_successfully? -%}
-                <h3
-                  class="newsletter-form__message newsletter-form__message--success form__message"
-                  id="Newsletter-success--{{ section.id }}"
-                  tabindex="-1"
-                  autofocus
+          {% comment %}
+            <div {{ block.shopify_attributes }} class="newsletter__input__block">
+              {% form 'customer', class: 'newsletter-form' %}
+                <input type="hidden" name="contact[tags]" value="newsletter">
+                <div
+                  class="newsletter-form__field-wrapper{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                  {% if settings.animations_reveal_on_scroll %}
+                    data-cascade
+                    style="--animation-order: {{ forloop.index }};"
+                  {% endif %}
                 >
-                  <span class="svg-wrapper">
-                    {{- 'icon-success.svg' | inline_asset_content -}}
-                  </span>
-                  {{- 'newsletter.success' | t }}
-                </h3>
-              {%- endif -%}
-            {% endform %}
-          </div>
+                  <div class="field">
+                    <input
+                      id="NewsletterForm--{{ section.id }}"
+                      type="email"
+                      name="contact[email]"
+                      class="field__input"
+                      value="{{ form.email }}"
+                      aria-required="true"
+                      autocorrect="off"
+                      autocapitalize="off"
+                      autocomplete="email"
+                      {% if form.errors %}
+                        autofocus
+                        aria-invalid="true"
+                        aria-describedby="Newsletter-error--{{ section.id }}"
+                      {% elsif form.posted_successfully? %}
+                        aria-describedby="Newsletter-success--{{ section.id }}"
+                      {% endif %}
+                      placeholder="{{ 'newsletter.label' | t }}"
+                      required
+                    >
+                    <label class="field__label" for="NewsletterForm--{{ section.id }}">
+                      {{ 'newsletter.label' | t }}
+                    </label>
+                    <button
+                      type="submit"
+                      class="newsletter-form__button field__button"
+                      name="commit"
+                      id="Subscribe"
+                      aria-label="{{ 'newsletter.button_label' | t }}"
+                    >
+                      <span class="svg-wrapper">
+                        {{- 'icon-arrow.svg' | inline_asset_content -}}
+                      </span>
+                    </button>
+                  </div>
+                  {%- if form.errors -%}
+                    <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
+                      <span class="svg-wrapper">
+                        {{- 'icon-error.svg' | inline_asset_content -}}
+                      </span>
+                      {{- form.errors.translated_fields.email | capitalize }}
+                      {{ form.errors.messages.email -}}
+                    </small>
+                  {%- endif -%}
+                </div>
+                {%- if form.posted_successfully? -%}
+                  <h3
+                    class="newsletter-form__message newsletter-form__message--success form__message"
+                    id="Newsletter-success--{{ section.id }}"
+                    tabindex="-1"
+                    autofocus
+                  >
+                    <span class="svg-wrapper">
+                      {{- 'icon-success.svg' | inline_asset_content -}}
+                    </span>
+                    {{- 'newsletter.success' | t }}
+                  </h3>
+                {%- endif -%}
+              {% endform %}
+            </div>
+          {% endcomment %}
           <div class="footer-separator">
             <svg
               class="separator-line"
@@ -112,74 +114,74 @@
               ></rect>
             </svg>
           </div>
-          
+
           <div class="logo__social-container">
-          <div class="logo-container" name="logo">
-            <!-- Icon Section -->
-            <div class="framer-aqirkv-container hidden-h6mkvm">
-              <div style="width:25px;height:25px !important;clip-path:url(#curve-vQVN81JVf-1wxwy1d);background:var(--token-19dd336a-8e79-47a7-b3c4-8d107f72d9a7, rgb(15, 15, 15))">
-                <svg>
-                  <clipPath id="curve-vQVN81JVf-1wxwy1d" clipPathUnits="objectBoundingBox" transform="scale(0.005)"><path d="M100 0C103.395 53.7596 146.24 96.6052 200 100C146.24 103.395 103.395 146.24 100 200C96.6052 146.24 53.7596 103.395 0 100C53.7596 96.6052 96.6052 53.7596 100 0Z"></path></clipPath>
-                </svg>
-              </div>
-            </div>
-
-            <!-- Text Section -->
-            <div class="text-container">
-              <h5
-                style="
-                  font-family: 'Climate Crisis', sans-serif;
-                  font-size: 20px;
-                  line-height: 1.4em;
-                  text-align: left;
-                  text-transform: uppercase;
-                  font-weight: bold;
-                  color: rgb(15, 15, 15); /* Replace with desired color */
-                "
-              >
-                vision verse
-              </h5>
-            </div>
-          </div>
-
-          <div class="social__icons">
-            <a
-              class="framer-1d1ok0 framer-1rqkjs5"
-              data-framer-name="instagram"
-              name="instagram"
-              href="https://www.instagram.com/visionverse_official/"
-              target="_blank"
-              rel="noopener"
-              style="opacity: 1; will-change: auto; transform: none; height:32px; width:32px;"
-            >
-              <div class="framer-a3vw29-container">
-                <div class="ssr-variant hidden-1jkgc65">
-                  <div style="display:contents">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      color="rgb(0, 0, 0)"
-                      style="user-select: none; width: 32px; height: 32px; display: inline-block; float:right;fill: rgb(0, 0, 0); flex-shrink: 0;margin-left:20px;"
-                    >
-                      <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path>
-                    </svg>
-                  </div>
+            <div class="logo-container" name="logo">
+              <!-- Icon Section -->
+              <div class="framer-aqirkv-container hidden-h6mkvm">
+                <div style="width:25px;height:25px !important;clip-path:url(#curve-vQVN81JVf-1wxwy1d);background:var(--token-19dd336a-8e79-47a7-b3c4-8d107f72d9a7, rgb(15, 15, 15))">
+                  <svg>
+                    <clipPath id="curve-vQVN81JVf-1wxwy1d" clipPathUnits="objectBoundingBox" transform="scale(0.005)"><path d="M100 0C103.395 53.7596 146.24 96.6052 200 100C146.24 103.395 103.395 146.24 100 200C96.6052 146.24 53.7596 103.395 0 100C53.7596 96.6052 96.6052 53.7596 100 0Z"></path></clipPath>
+                  </svg>
                 </div>
               </div>
-            </a>
-            <a href="mailto:danielp2811@gmail.com"
-              ><img
-                decoding="async"
-                loading="lazy"
-                src="https://framerusercontent.com/images/qba1MgdnU6Ge9fx7mme42MWgYJ0.png"
-                alt=""
-                width="32"
-                height="32"
-                style="display:block;float:right;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto;"
-            ></a>
+
+              <!-- Text Section -->
+              <div class="text-container">
+                <h5
+                  style="
+                    font-family: 'Climate Crisis', sans-serif;
+                    font-size: 20px;
+                    line-height: 1.4em;
+                    text-align: left;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color: rgb(15, 15, 15); /* Replace with desired color */
+                  "
+                >
+                  vision verse
+                </h5>
+              </div>
+            </div>
+
+            <div class="social__icons">
+              <a
+                class="framer-1d1ok0 framer-1rqkjs5"
+                data-framer-name="instagram"
+                name="instagram"
+                href="https://www.instagram.com/visionverse_official/"
+                target="_blank"
+                rel="noopener"
+                style="opacity: 1; will-change: auto; transform: none; height:32px; width:32px;"
+              >
+                <div class="framer-a3vw29-container">
+                  <div class="ssr-variant hidden-1jkgc65">
+                    <div style="display:contents">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        color="rgb(0, 0, 0)"
+                        style="user-select: none; width: 32px; height: 32px; display: inline-block; float:right;fill: rgb(0, 0, 0); flex-shrink: 0;margin-left:20px;"
+                      >
+                        <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="mailto:danielp2811@gmail.com"
+                ><img
+                  decoding="async"
+                  loading="lazy"
+                  src="https://framerusercontent.com/images/qba1MgdnU6Ge9fx7mme42MWgYJ0.png"
+                  alt=""
+                  width="32"
+                  height="32"
+                  style="display:block;float:right;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto;"
+              ></a>
+            </div>
           </div>
-        </div>
 
           </div>
       {%- endcase -%}
