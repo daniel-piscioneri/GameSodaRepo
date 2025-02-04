@@ -18,6 +18,9 @@
     },
     "featured_collection_tmtRTD": {
       "type": "featured-collection",
+      "custom_css": [
+        "* {justify-content: center;}"
+      ],
       "settings": {
         "title": "Alex",
         "heading_size": "h1",
@@ -46,6 +49,9 @@
     },
     "featured_collection_mbGWdM": {
       "type": "featured-collection",
+      "custom_css": [
+        "*{justify-content:center;}"
+      ],
       "settings": {
         "title": "Maya",
         "heading_size": "h1",
