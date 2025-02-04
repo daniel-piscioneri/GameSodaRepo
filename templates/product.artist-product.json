@@ -9,6 +9,15 @@
  */
 {
   "sections": {
+    "custom_liquid_JNBgYC": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<h2>{{ product.metafields.custom.quiz_type }}</h2>\n<p>{{ product.metafields.custom.artist_name }}</p>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "rich_text_c3bVcj": {
       "type": "rich-text",
       "blocks": {
@@ -22,7 +31,7 @@
         "text_y8EzLY": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+            "text": "<p>Write information about an arist and what they have to offer. </p>"
           }
         }
       },
@@ -31,7 +40,9 @@
         "text_y8EzLY"
       ],
       "custom_css": [
-        "* {background: none; max-width: 96%;}"
+        "* {background: none; max-width: 96%;}",
+        ".rich-text__heading {font-size: 10rem !important;}",
+        ".rich-text__text {font-size: 2rem;}"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -135,6 +146,7 @@
     }
   },
   "order": [
+    "custom_liquid_JNBgYC",
     "rich_text_c3bVcj",
     "main",
     "related-products"
