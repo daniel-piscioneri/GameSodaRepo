@@ -11,8 +11,14 @@
   "sections": {
     "custom_liquid_nDqMm9": {
       "type": "custom-liquid",
+      "custom_css": [
+        ".artist {display: flex; flex-direction: column; text-align: center;}",
+        "* {max-width: 100%; align-items: center;}",
+        "strong {font-weight: bolder; color: black; font-size: 3rem;}",
+        "p {text-align: left; width: 80%;}"
+      ],
       "settings": {
-        "custom_liquid": "{% if page.metafields.custom.artist_name %}\n    <div class=\"artist-section\">\n        {% if page.metafields.custom.artist_photo %}\n            <img src=\"{{ page.metafields.custom.artist_photo | img_url: 'large' }}\" \n                 alt=\"{{ page.metafields.custom.artist_name }}\" class=\"artist-photo\">\n        {% endif %}\n        <h2>Artist: {{ page.metafields.custom.artist_name }}</h2>\n        <p>{{ page.metafields.custom.artist_description }}</p>\n    </div>\n{% endif %}\n\n{% if page.metafields.custom.quiz_title %}\n    <div class=\"quiz-section\">\n        <h2>Quiz: {{ page.metafields.custom.quiz_title }}</h2>\n        <p>{{ page.metafields.custom.quiz_description }}</p>\n    </div>\n{% endif %}",
+        "custom_liquid": "{% if page.metafields.custom.artist_name %}\n    <div class=\"artist\">\n        {% if page.metafields.custom.artist_photo %}\n            <img src=\"{{ page.metafields.custom.artist_photo | img_url: 'large' }}\" \n                 alt=\"{{ page.metafields.custom.artist_name }}\" class=\"artist-photo\">\n        {% endif %}\n        <h2>Artist: {{ page.metafields.custom.artist_name }}</h2>\n        <p>{{ page.metafields.custom.artist_description }}</p>\n    </div>\n{% endif %}\n\n{% if page.metafields.custom.quiz_title %}\n    <div class=\"quiz-section\">\n        <h2>Quiz: {{ page.metafields.custom.quiz_title }}</h2>\n        <p>{{ page.metafields.custom.quiz_description }}</p>\n    </div>\n{% endif %}",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
