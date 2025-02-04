@@ -112,7 +112,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "alex",
+        "collection": "{{ page.metafields.custom.artist_collection.value }}",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,
