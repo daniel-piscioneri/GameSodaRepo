@@ -9,6 +9,39 @@
  */
 {
   "sections": {
+    "rich_text_c3bVcj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_FC4Rbr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Artist Name",
+            "heading_size": "hxl"
+          }
+        },
+        "text_y8EzLY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_FC4Rbr",
+        "text_y8EzLY"
+      ],
+      "custom_css": [
+        "* {background: none; max-width: 96%;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -102,6 +135,7 @@
     }
   },
   "order": [
+    "rich_text_c3bVcj",
     "main",
     "related-products"
   ]
