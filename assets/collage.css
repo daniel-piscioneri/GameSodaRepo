@@ -172,12 +172,23 @@
 }
 
 .collage__btn__style,
-.collage__btn__style_blue {
+.collage__btn__style-left_blue {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   height: -webkit-fill-available;
+  margin: 1rem;
+  background-color: transparent;
+  border-radius: 1rem;
+}
+
+.collage__btn__style-left{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: auto;
   margin: 1rem;
   background-color: transparent;
   border-radius: 1rem;
@@ -200,7 +211,7 @@
     padding: 0;
   }
 
-  .collage__btn__style_blue {
+  .collage__btn__style-left_blue {
     padding-left: 2rem;
   }
 
