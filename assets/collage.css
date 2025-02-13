@@ -143,11 +143,12 @@
 }
 
 .btn__left {
-  float: left;
-  position: relative;
-  top: 90%;
-  font-size-adjust: calc(var(--font-body-scale)*0.7);
-  color: green;
+  background-color: transparent;
+  border: none;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  align-items: flex-start;
 }
 
 @media (max-width: 1300px) {
@@ -173,16 +174,21 @@
 .collage__btn__style,
 .collage__btn__style_blue {
   position: relative;
-  padding: 0 20px 0 20px;
-  width: 100%;
-  height: inherit
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: auto;
+  margin: 1rem;
+  background-color: #f4f4f4ab;
+  border-radius: 1rem;
 }
 
 .btn {
-  float: right;
-  position: relative;
-  bottom: 80%;
-  font-size-adjust: calc(var(--font-body-scale)*0.7);
+  background-color: transparent;
+  border: none;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -202,9 +208,9 @@
     top: 200%;
   }
 
-  .btn {
+  /* .btn {
     bottom: 280%;
-  }
+  } */
 }
 
 @media (max-width:814px) {
@@ -220,18 +226,18 @@
   }
 }
 
-@media (max-width:749px) {
+/* @media (max-width:749px) {
   .btn__left,.btn {
     position: absolute;
     margin-top: -5vh;
     float: right;
     right: 0;
   }
-}
+} */
 
 @media (max-width:922px) {
   .btn {
-    bottom: 160%;
+    /* bottom: 160%; */
     font-size-adjust: calc(var(--font-body-scale)*0.3);
   }
 
@@ -245,7 +251,7 @@
   }
 }
 
-@media (max-width:500px) {
+/* @media (max-width:500px) {
   .btn__left, .btn {
     position: absolute;
     margin-top: -5vh;
@@ -254,7 +260,7 @@
     bottom: 0;
     font-size: 2rem;
   }
-}
+} */
 
 .collage-card {
   height: 100%;
