@@ -177,10 +177,12 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: -webkit-fill-available;
+  height: 100vh;
   margin: 1rem;
   background-color: transparent;
   border-radius: 1rem;
+  flex: 1;
+  flex-direction: column;
 }
 
 .collage__btn__style-big{
