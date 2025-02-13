@@ -177,7 +177,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: auto;
+  height: -webkit-fill-available;
   margin: 1rem;
   background-color: transparent;
   border-radius: 1rem;
