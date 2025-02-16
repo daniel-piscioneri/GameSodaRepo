@@ -12,13 +12,15 @@
     "custom_liquid_nDqMm9": {
       "type": "custom-liquid",
       "custom_css": [
-        ".artist {display: flex; flex-direction: column; text-align: center;}",
-        "* {max-width: 100%; align-items: center;}",
-        "strong {font-weight: bolder; color: black; font-size: 3rem;}",
-        "p {text-align: left; width: 80%;}"
+        ".artist {display: flex; /* flex-direction: column; text-align: center; */ align-items: flex-start; margin-bottom: 20px;}",
+        "/* * {max-width: 100%; align-items: center;}",
+        " */strong {font-weight: bolder; color: black; font-size: 3rem;}",
+        "p {text-align: left; /* width: 80%; */ overflow: hidden;}",
+        ".desc{display:flex; flex-direction:row;}",
+        ".artist-photo {float: left; margin-right: 15px; max-width: 50%; height: auto;}"
       ],
       "settings": {
-        "custom_liquid": "{% if page.metafields.custom.artist_name %}\n    <div class=\"artist\">\n        {% if page.metafields.custom.artist_photo %}\n            <img src=\"{{ page.metafields.custom.artist_photo | img_url: 'large' }}\" \n                 alt=\"{{ page.metafields.custom.artist_name }}\" class=\"artist-photo\">\n        {% endif %}\n        <h2>Artist: {{ page.metafields.custom.artist_name }}</h2>\n        <p>{{ page.metafields.custom.artist_description | newline_to_br}}</p>\n    </div>\n{% endif %}\n\n{% if page.metafields.custom.quiz_title %}\n{% if page.metafields.custom.artist_photo %}\n<div class=\"artist\">\n            <img src=\"{{ page.metafields.custom.artist_photo | img_url: 'large' }}\" \n                 alt=\"{{ page.metafields.custom.artist_name }}\" class=\"artist-photo\">\n        {% endif %}\n    \n        <h2>Quiz: {{ page.metafields.custom.quiz_title }}</h2>\n        <p>{{ page.metafields.custom.quiz_description  | newline_to_br}}</p>\n    </div>\n{% endif %}",
+        "custom_liquid": "{% if page.metafields.custom.artist_name %}\n    <div class=\"artist\">\n        {% if page.metafields.custom.artist_photo %}\n            <img src=\"{{ page.metafields.custom.artist_photo | img_url: 'large' }}\" \n                 alt=\"{{ page.metafields.custom.artist_name }}\" class=\"artist-photo\">\n        {% endif %}\n        <h2>Artist: {{ page.metafields.custom.artist_name }}</h2>\n        <p>{{ page.metafields.custom.artist_description | newline_to_br}}</p>\n    </div>\n{% endif %}\n\n{% if page.metafields.custom.quiz_title %}\n{% if page.metafields.custom.artist_photo %}\n<div class=\"artist\">\n            <img src=\"{{ page.metafields.custom.artist_photo | img_url: 'large' }}\" \n                 alt=\"{{ page.metafields.custom.artist_name }}\" class=\"artist-photo\">\n        {% endif %}\n    <div class=\"desc\">\n        <h2>Quiz: {{ page.metafields.custom.quiz_title }}</h2>\n        <p>{{ page.metafields.custom.quiz_description  | newline_to_br}}</p></div>\n    </div>\n{% endif %}",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
