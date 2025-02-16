@@ -13,10 +13,10 @@
       "type": "custom-liquid",
       "custom_css": [
         ".artist {display: flex; /* flex-direction: column; text-align: center; */ align-items: flex-start; margin-bottom: 20px;}",
-        "/* * {max-width: 100%; align-items: center;}",
+        " /* * {max-width: 100%; align-items: center;}",
         " */strong {font-weight: bolder; color: black; font-size: 3rem;}",
         "p {text-align: left; /* width: 80%; */ overflow: hidden;}",
-        ".desc{display:flex; flex-direction:row;}",
+        ".desc {display: flex; flex-direction: column;}",
         ".artist-photo {float: left; margin-right: 15px; max-width: 50%; height: auto;}"
       ],
       "settings": {
