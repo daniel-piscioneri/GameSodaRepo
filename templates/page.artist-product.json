@@ -12,7 +12,7 @@
     "custom_liquid_nDqMm9": {
       "type": "custom-liquid",
       "custom_css": [
-        ".artist {display: flex; align-items: flex-start; margin-bottom: 20px; justify-content: center; width:80vw; margin-left:15vw;}",
+        ".artist {display: flex; align-items: flex-start; margin-bottom: 20px; justify-content: center; width: 80vw; margin-left: 15vw;}",
         "strong {font-weight: bolder; color: black; font-size: 3rem;}",
         "p {text-align: left; width: 80%; overflow: hidden;}",
         ".desc {display: flex; flex-direction: column;}",
@@ -121,9 +121,9 @@
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
-        "show_secondary_image": false,
+        "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
