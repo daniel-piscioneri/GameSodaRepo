@@ -3,7 +3,7 @@
     height: 80px !important;
   }
 
-  .multicol__height_sml{
+  .__height_sml{
     height: 80px !important;
   }
 }
@@ -13,7 +13,7 @@
 }
 
 .multicol__height_sml{
-  height: 80px;
+  height: 16vh;
 }
 
 .multicol__width{
@@ -44,10 +44,10 @@
     padding-right: 5rem;
   }
 }
-
+/* 
 .high_btn{
   top:55%;
-}
+} */
 
 @media screen and (max-width: 989px) {
   .multicolumn .page-width {
