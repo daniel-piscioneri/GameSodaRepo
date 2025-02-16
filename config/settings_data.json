@@ -390,5 +390,10 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".artist {display: flex; flex-direction: row;}"
+    ]
   }
 }
