@@ -107,6 +107,9 @@
     },
     "featured_collection_AXX8Q3": {
       "type": "featured-collection",
+      "custom_css": [
+        "ul{justify-content:center;}"
+      ],
       "settings": {
         "title": "Artist Collection",
         "heading_size": "h0",
