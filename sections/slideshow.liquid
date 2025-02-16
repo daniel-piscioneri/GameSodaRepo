@@ -163,21 +163,23 @@
             class="slideshow__text banner__box content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient slideshow__text--{{ block.settings.text_alignment }} slideshow__text-mobile--{{ block.settings.text_alignment_mobile }}"
             style="background: none; display:inline-block"
           >
-            {%- if block.settings.heading != blank -%}
-              <h2
-                class="banner__heading inline-richtext {{ block.settings.heading_size }}"
-                style="text-transform:uppercase;background:yellow;width:fit-content;border:yellow solid 1rem; border-radius:3rem 3rem 0 0; color:#4182c4;font-weight:bolder"
-              >
-                {{ block.settings.heading }}
-              </h2>
-            {%- endif -%}
-            {%- if block.settings.subheading != blank -%}
-              <div class="banner__text rte" style="margin: 0;" {{ block.shopify_attributes }}>
-                <p style="background:yellow; width:fit-content; justify-content:center;border:yellow solid 1rem; border-radius: 0 5rem 5rem 5rem; padding:0;margin:0;">
-                  {{ block.settings.subheading }}
-                </p>
-              </div>
-            {%- endif -%}
+            <a href="www.youtube.com">
+              {%- if block.settings.heading != blank -%}
+                <h2
+                  class="banner__heading inline-richtext {{ block.settings.heading_size }}"
+                  style="text-transform:uppercase;background:yellow;width:fit-content;border:yellow solid 1rem; border-radius:3rem 3rem 0 0; color:#4182c4;font-weight:bolder"
+                >
+                  {{ block.settings.heading }}
+                </h2>
+              {%- endif -%}
+              {%- if block.settings.subheading != blank -%}
+                <div class="banner__text rte" style="margin: 0;" {{ block.shopify_attributes }}>
+                  <p style="background:yellow; width:fit-content; justify-content:center;border:yellow solid 1rem; border-radius: 0 5rem 5rem 5rem; padding:0;margin:0;">
+                    {{ block.settings.subheading }}
+                  </p>
+                </div>
+              {%- endif -%}
+            </a>
             {%- if block.settings.button_label != blank -%}
               <div class="banner__buttons">
                 <a
